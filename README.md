@@ -360,9 +360,6 @@ It **does not provide medical advice, diagnosis, or treatment** and should not b
 
 **Dhanush A**
 
-- GitHub: https://github.com/yourusername
-- LinkedIn: https://linkedin.com/in/yourprofile
-- Portfolio: https://yourportfolio.com
 
 ---
 
