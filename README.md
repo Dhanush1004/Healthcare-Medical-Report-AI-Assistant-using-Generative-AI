@@ -1,4 +1,4 @@
-# 🏥 Healthcare Medical Report AI Assistant using Generative AI
+# Healthcare Medical Report AI Assistant using Generative AI
 
 > An AI-powered healthcare assistant that extracts, analyzes, summarizes, and explains medical reports using OCR and Large Language Models (LLMs).
 
@@ -11,11 +11,9 @@
 
 ---
 
-## 📖 Overview
+## Overview
 
-Healthcare Medical Report AI Assistant is an end-to-end AI-powered application that helps users understand their medical reports through Generative AI.
-
-The system extracts text from uploaded PDF or image-based medical reports using OCR, analyzes clinical information with Google's Gemini API, generates easy-to-understand summaries, highlights abnormal values, and allows users to ask natural language questions about their reports.
+Healthcare Medical Report AI Assistant is an AI-powered web application that helps users understand their medical reports using Generative AI. The application extracts text from uploaded PDF or image-based reports using OCR, analyzes the content with Google's Gemini API, generates patient-friendly summaries, explains complex medical terminology, highlights abnormal values, and answers natural language questions related to the uploaded report.
 
 This project demonstrates practical applications of:
 
@@ -24,75 +22,69 @@ This project demonstrates practical applications of:
 - OCR Pipelines
 - Healthcare AI
 - REST API Development
-- End-to-End AI Application Development
+- Full-Stack AI Application Development
 
 ---
 
-# ✨ Features
+## Features
 
-## 📄 Medical Report Upload
+### Medical Report Upload
 
-- Upload PDF reports
+- Upload PDF medical reports
 - Upload scanned reports
 - Upload laboratory reports
 - Upload prescription images
 
----
+### OCR Processing
 
-## 🔍 OCR Processing
-
-- Extract text from scanned documents
-- Preserve report formatting
-- Support multiple medical report formats
+- Extract text from scanned medical reports
+- Preserve report structure
+- Support multiple report formats
 - Convert images into structured text
 
----
+### AI Medical Summary
 
-## 🤖 AI Medical Summary
+Generate easy-to-understand summaries from complex medical reports.
 
-Generate patient-friendly summaries from complex medical reports.
+**Example**
 
-### Example
+**Input**
 
-### Input
-
-```
+```text
 Hemoglobin: 9.8 g/dL
 ```
 
-### AI Output
+**AI Output**
 
 > Your hemoglobin level is lower than the normal range, which may indicate anemia. Please consult your physician for further evaluation.
 
 ---
 
-## 💬 Chat with Your Medical Report
+### Chat with Your Medical Report
 
-Users can ask questions such as:
+Users can ask questions like:
 
 - What diseases are mentioned?
 - Explain my blood test.
 - Is my cholesterol normal?
 - What medicines are prescribed?
 - What should I discuss with my doctor?
+- Explain this report in simple language.
 - Summarize my diagnosis.
-- Explain medical terms in simple language.
 
 ---
 
-## ⚠️ Highlight Abnormal Test Values
-
-Automatically detects abnormal laboratory values.
+### Highlight Abnormal Test Values
 
 | Test | Result | Status |
-|-------|---------|--------|
-| Hemoglobin | 9.8 g/dL | 🔴 Low |
-| Cholesterol | 240 mg/dL | 🔴 High |
-| Vitamin D | 18 ng/mL | 🔴 Low |
+|------|--------|--------|
+| Hemoglobin | 9.8 g/dL | Low |
+| Cholesterol | 240 mg/dL | High |
+| Vitamin D | 18 ng/mL | Low |
 
 ---
 
-## 📊 Dashboard
+### Dashboard
 
 - Previous uploads
 - AI-generated summaries
@@ -102,19 +94,18 @@ Automatically detects abnormal laboratory values.
 
 ---
 
-## 🔐 Security
+### Security
 
 - Secure file uploads
 - JWT Authentication
-- User Login
-- Protected APIs
+- Protected REST APIs
 - Temporary file storage
 
 ---
 
-# 🏗️ System Architecture
+## System Architecture
 
-```
+```text
                 User
                   │
                   ▼
@@ -141,229 +132,192 @@ Automatically detects abnormal laboratory values.
 
 ---
 
-# 🛠️ Tech Stack
+## Tech Stack
 
-## AI & NLP
+### Artificial Intelligence
 
 - Google Gemini API
 - Prompt Engineering
 - Natural Language Processing (NLP)
 
-## Backend
+### Backend
 
 - Python
 - FastAPI
 - REST APIs
 
-## OCR
+### OCR
 
 - EasyOCR
 - Tesseract OCR
 
-## Data Processing
+### Data Processing
 
 - Pandas
 - NumPy
 
-## Database
+### Database
 
 - MySQL
 - MongoDB
 
-## Frontend
+### Frontend
 
 - React.js
 - HTML5
 - CSS3
 - JavaScript
 
-## Deployment
+### Deployment
 
 - Docker
 - GitHub
 
 ---
 
-# 🚀 Advanced Features
+## Advanced Features
 
-✅ AI-generated Medical Summary
-
-✅ Medical Terminology Explanation
-
-✅ Drug Information Lookup
-
-✅ Disease Risk Summary
-
-✅ Follow-up Question Generation
-
-✅ Report Chatbot
-
-✅ Abnormal Test Detection
-
-✅ Multi-language Support (English & Tamil)
-
-✅ Voice Input
-
-✅ Voice Response
-
-✅ Medical History Timeline
-
-✅ Download AI Summary as PDF
+- AI-generated medical summaries
+- Medical terminology explanation
+- Drug information lookup
+- Disease risk summary
+- Follow-up question generation
+- Intelligent report chatbot
+- Automatic abnormal test detection
+- Multi-language support (English & Tamil)
+- Voice input
+- Voice response
+- Medical history timeline
+- Download AI summary as PDF
 
 ---
 
-# 🔮 Future Enhancements
+## Future Improvements
 
 - Retrieval-Augmented Generation (RAG)
 - FAISS / ChromaDB Vector Database
-- Medical Guideline Retrieval
-- Doctor Recommendation Module
-- Appointment Scheduling
-- Medical Report Comparison
-- Cloud Deployment
-- Mobile Application
-- HIPAA-inspired Security Enhancements
+- Medical guideline retrieval
+- Doctor recommendation module
+- Appointment scheduling
+- Medical report comparison
+- Cloud deployment
+- Mobile application
+- Enhanced security and privacy
 
 ---
 
-# 📂 Project Structure
+## Project Structure
 
-```
+```text
 Healthcare-AI-Assistant/
-
-│── backend/
+│
+├── backend/
 │   ├── api/
 │   ├── services/
 │   ├── models/
-│   ├── utils/
-│   ├── OCR/
 │   ├── prompts/
+│   ├── ocr/
+│   ├── utils/
 │   └── main.py
 │
-│── frontend/
+├── frontend/
 │   ├── src/
 │   ├── components/
 │   ├── pages/
 │   └── App.js
 │
-│── uploads/
-│
-│── database/
-│
-│── docker/
-│
-│── requirements.txt
-│
+├── uploads/
+├── database/
+├── docker/
+├── requirements.txt
+├── .env.example
 └── README.md
 ```
 
 ---
 
-# ⚙️ Installation
+## Installation
 
-## Clone Repository
+### Clone the Repository
 
 ```bash
 git clone https://github.com/yourusername/Healthcare-AI-Assistant.git
-```
 
-```
 cd Healthcare-AI-Assistant
 ```
 
----
-
-## Create Virtual Environment
+### Create a Virtual Environment
 
 ```bash
 python -m venv venv
 ```
 
-Activate
-
-### Windows
+**Windows**
 
 ```bash
 venv\Scripts\activate
 ```
 
-### Linux/Mac
+**Linux / macOS**
 
 ```bash
 source venv/bin/activate
 ```
 
----
-
-## Install Dependencies
+### Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
----
-
-## Configure Environment Variables
+### Configure Environment Variables
 
 Create a `.env` file.
 
-```
+```env
 GEMINI_API_KEY=YOUR_API_KEY
-
-JWT_SECRET=YOUR_SECRET
-
+JWT_SECRET=YOUR_SECRET_KEY
 DATABASE_URL=YOUR_DATABASE_URL
 ```
 
----
-
-## Run FastAPI
+### Run Backend
 
 ```bash
 uvicorn main:app --reload
 ```
 
----
-
-## Run React
+### Run Frontend
 
 ```bash
 npm install
-
 npm start
 ```
 
 ---
 
-# 📸 Screenshots
+## Screenshots
 
 ### Dashboard
 
-*(Add Screenshot Here)*
-
----
+> Add screenshot here
 
 ### Upload Medical Report
 
-*(Add Screenshot Here)*
-
----
+> Add screenshot here
 
 ### AI Summary
 
-*(Add Screenshot Here)*
-
----
+> Add screenshot here
 
 ### Chat Interface
 
-*(Add Screenshot Here)*
+> Add screenshot here
 
 ---
 
-# 🎯 Learning Outcomes
+## Learning Outcomes
 
-This project demonstrates practical experience with:
+This project demonstrates experience with:
 
 - Large Language Models (LLMs)
 - Google Gemini API Integration
@@ -372,13 +326,13 @@ This project demonstrates practical experience with:
 - FastAPI Backend Development
 - REST API Design
 - AI Chatbot Development
-- React Frontend Development
-- Full Stack AI Applications
+- React.js Development
+- Full-Stack AI Applications
 - Healthcare AI Solutions
 
 ---
 
-# 📈 Resume Highlights
+## Resume Highlights
 
 This project showcases expertise in:
 
@@ -386,34 +340,36 @@ This project showcases expertise in:
 - Prompt Engineering
 - OCR-Based Document Intelligence
 - Healthcare AI
-- NLP Applications
+- Natural Language Processing
 - API Integration
 - Backend Engineering
-- Full Stack Development
-- AI-powered Chat Systems
+- Full-Stack Development
+- AI-powered Conversational Systems
 
 ---
 
-# ⚠️ Disclaimer
+## Disclaimer
 
-This application is intended **for educational and informational purposes only**.
+This application is intended for **educational and informational purposes only**.
 
 It **does not provide medical advice, diagnosis, or treatment** and should not be considered a substitute for consultation with qualified healthcare professionals.
 
 ---
 
-# 👨‍💻 Author
+## Author
 
 **Dhanush A**
 
-📧 Email: your-email@example.com
-
-🔗 LinkedIn: https://linkedin.com/in/yourprofile
-
-💻 GitHub: https://github.com/yourusername
-
-🌐 Portfolio: https://yourportfolio.com
+- GitHub: https://github.com/yourusername
+- LinkedIn: https://linkedin.com/in/yourprofile
+- Portfolio: https://yourportfolio.com
 
 ---
 
-⭐ If you found this project useful, consider giving it a star!
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+If you found this project useful, consider giving it a ⭐.
